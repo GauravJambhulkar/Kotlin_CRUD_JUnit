@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="getBanks()" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-23T07:49:51" hostname="PT198LXLT" time="0.016">
+  <properties/>
+  <testcase name="should return all banks()" classname="com.example.thenewboston.controller.BankControllerTest$GetBanks" time="0.016"/>
+  <system-out><![CDATA[2024-05-23T13:19:51.742+05:30  INFO 17727 --- [thenewboston] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.thenewboston.controller.BankControllerTest$GetBanks]: GetBanks does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-23T13:19:51.746+05:30  INFO 17727 --- [thenewboston] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.thenewboston.TheNewBostonApplication for test class com.example.thenewboston.controller.BankControllerTest$GetBanks
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.thenewboston.controller.BankController
+           Method = com.example.thenewboston.controller.BankController#getBanks()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"accountNumber":"1234","trust":3.14,"transactionFee":17},{"accountNumber":"1010","trust":17.0,"transactionFee":0},{"accountNumber":"5678","trust":0.0,"transactionFee":100}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="getBank()" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-23T07:49:50" hostname="PT198LXLT" time="0.902">
+  <properties/>
+  <testcase name="should return the bank with the given number()" classname="com.example.thenewboston.controller.BankControllerTest$GetBank" time="0.902"/>
+  <system-out><![CDATA[  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::       (v3.3.0-SNAPSHOT)
+
+2024-05-23T13:19:49.593+05:30  INFO 17727 --- [thenewboston] [    Test worker] c.e.t.controller.BankControllerTest      : Starting BankControllerTest using Java 21.0.2 with PID 17727 (started by gaurav_jambhulkar in /home/gaurav_jambhulkar/GauravJambhulkar/Kotlin/thenewboston)
+2024-05-23T13:19:49.594+05:30  INFO 17727 --- [thenewboston] [    Test worker] c.e.t.controller.BankControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T13:19:50.473+05:30  INFO 17727 --- [thenewboston] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-05-23T13:19:50.771+05:30  INFO 17727 --- [thenewboston] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-23T13:19:50.772+05:30  INFO 17727 --- [thenewboston] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-23T13:19:50.773+05:30  INFO 17727 --- [thenewboston] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-05-23T13:19:50.804+05:30  INFO 17727 --- [thenewboston] [    Test worker] c.e.t.controller.BankControllerTest      : Started BankControllerTest in 1.429 seconds (process running for 2.351)
+2024-05-23T13:19:50.821+05:30  INFO 17727 --- [thenewboston] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.thenewboston.controller.BankControllerTest$GetBank]: GetBank does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-23T13:19:50.828+05:30  INFO 17727 --- [thenewboston] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.thenewboston.TheNewBostonApplication for test class com.example.thenewboston.controller.BankControllerTest$GetBank
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks/1234
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.thenewboston.controller.BankController
+           Method = com.example.thenewboston.controller.BankController#getBank(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"accountNumber":"1234","trust":3.14,"transactionFee":17}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/gaurav_jambhulkar/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/4a451ee6484abac3a498df0f3b33ed00a6fced4d/byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
